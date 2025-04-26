@@ -1,1 +1,196 @@
 /* your code here */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #00e48a;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Product Section */
+.product {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  overflow: hidden;
+  width: 900px;
+}
+
+/* Product Photo */
+.product__photo {
+  flex: 1;
+  background: linear-gradient(#a8e063, #56ab2f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.photo-container {
+  text-align: center;
+}
+
+.photo-main {
+  position: relative;
+}
+
+.photo-main img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Top Right Controls (share and heart icons) */
+.controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.controls i {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Photo Album */
+.photo-album ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.photo-album ul li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.photo-album ul li img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.photo-album ul li img:hover {
+  transform: scale(1.1);
+}
+
+/* Product Info Section */
+.product__info {
+  flex: 1;
+  padding: 40px;
+}
+
+.title h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.title span {
+  display: block;
+  color: gray;
+  font-size: 14px;
+}
+
+/* Price */
+.price {
+  margin: 20px 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #e60023;
+}
+
+.price span {
+  font-size: 28px;
+}
+
+/* Variant Section */
+.variant {
+  margin-top: 20px;
+}
+
+.variant h3 {
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.variant ul {
+  display: flex;
+  margin-top: 10px;
+}
+
+.variant ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+.variant ul li img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.variant ul li img:hover {
+  transform: scale(1.1);
+}
+
+/* Description Section */
+.description {
+  margin-top: 30px;
+}
+
+.description h3 {
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.description ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.description ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Add to Cart Button (Optional if you want) */
+.add-to-cart {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: #e60023;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #c2001f;
+}
